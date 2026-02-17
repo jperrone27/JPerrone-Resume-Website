@@ -6,7 +6,6 @@ import {
   Linkedin,
   Github,
   HardDrive,
-  Globe,
   Calendar,
   Building,
   GraduationCap,
@@ -38,21 +37,19 @@ function App() {
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl font-bold text-gray-900 mb-2">Jordan Perrone</h1>
               <h2 className="text-xl text-blue-600 font-semibold mb-2">
-                PhD Student & Graduate Research Assistant
+                Graduate Research Assistant (AI/ML Researcher)
               </h2>
               <p className="text-gray-600 text-lg mb-3 max-w-4xl">
-                @ Florida Atlantic University&apos;s (FAU&apos;s) Center for Connected Autonomy & Artificial Intelligence (CA-AI)
+              @ Florida Atlantic University's Center for Connected Autonomy & Artificial Intelligence (CA-AI)
               </p>
 
-              {/* Contact + Locations */}
+              {/* Contact + Location */}
               <div className="flex flex-col gap-2">
-                {/* Contact row */}
                 <div className="flex flex-wrap justify-center md:justify-start gap-6">
                   <div className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
                     <MapPin className="w-5 h-5" />
                     <span>Boca Raton, FL</span>
                   </div>
-
                   <div className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
                     <Mail className="w-5 h-5" />
                     <span>jperrone27@gmail.com</span>
@@ -71,7 +68,6 @@ function App() {
                   <Linkedin className="w-5 h-5" />
                   <span className="text-sm hidden sm:inline">LinkedIn</span>
                 </a>
-
                 <a
                   href="https://github.com/jperrone27"
                   target="_blank"
@@ -87,10 +83,9 @@ function App() {
         </div>
       </div>
 
-      {/* NEW: Single-column section (Objective only) */}
+      {/* Objective Section */}
       <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="space-y-6">
-          {/* Objective */}
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div className="flex items-center gap-3 mb-2">
               <div className="p-2 bg-blue-100 rounded-lg">
@@ -98,27 +93,12 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Objective</h3>
             </div>
-            <div className="space-y-4">
-              <p className="text-gray-600 text-lg">
-                To design and deploy robust, computationally efficient machine learning systems that operate reliably
-                in distributed and resource-constrained environments.
-              </p>
-
-              {/* Desired metro areas: */}
-              <div className="flex flex-wrap justify-center md:justify-start gap-3 items-center">
-                <span className="text-md font-semibold text-gray-700">Desired Metro Areas:</span>
-                <div className="flex flex-wrap gap-2">
-                  {['New York, NY', 'Los Angeles, CA', 'Miami, FL'].map((loc) => (
-                    <span key={loc} className="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded-full">
-                      {loc}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <p className="text-gray-600 text-lg">
+            AI/ML Engineer focused on scalable AI systems, distributed computing, and performance-optimized model deployment. Pursuing a Ph.D. part-time while seeking full-time roles building reliable ML and data infrastructure for production environments.
+            </p>
           </div>
 
-          {/* NEW: Three-column section (Experience + Education + Right column [Skills + Projects]) */}
+          {/* Main Grid Section */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Column 1: Experience */}
             <div className="bg-white rounded-lg shadow-sm p-6">
@@ -130,70 +110,38 @@ function App() {
               </div>
 
               <div className="space-y-6">
-                {/* Experience Item 0: GRA */}
+                {/* GRA */}
                 <div className="border-l-4 border-blue-500 pl-4">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
                     <Calendar className="w-4 h-4" />
                     <span>Aug 2025 – Present</span>
                   </div>
-
-                  <h4 className="text-lg font-semibold text-gray-900">Graduate Research Assistant, PhD Student</h4>
-
-                  <h5 className="text-blue-600 font-medium mb-2">
-                    Florida Atlantic University, Center for Connected Autonomy & Artificial Intelligence (CA-AI)
-                  </h5>
-
+                  <h4 className="text-lg font-semibold text-gray-900">Graduate Research Assistant (AI/ML Researcher)</h4>
+                  <h5 className="text-blue-600 font-medium mb-2">Florida Atlantic University</h5>
                   <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
-                    <li>Researching decentralized learning for AI model training, aggregation, and inference at the edge.</li>
-                    <li>
-                      Conducting research and coursework in intelligent wireless communication systems (Smart Antennas),
-                      focusing on signal coordination across multi-agent AI networks for data, model, and decision exchange.
-                    </li>
-                    <li>
-                      Designing and evaluating decentralized learning frameworks that adapt aggregation and inference behavior
-                      based on communication constraints, data distribution variability, and heterogeneous edge devices.
-                    </li>
+                    <li>Developing PINN and DNN architectures in PyTorch for wireless signal DOA estimation using 16-element ULA simulation data.</li>
+                    <li>Proposing computational speed-ups over traditional Maximum Likelihood DOA estimation methods.</li>
+                    <li>Modeling robustness under varying SINR levels to improve estimation stability under adversarial conditions.</li>
+                    <li>Designing decentralized learning frameworks that optimize deep learning aggregation for bandwidth and hardware constraints.</li>
                   </ul>
-
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Decentralized Learning</span>
-                    <span className="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Multi-Agent Systems</span>
-                    <span className="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Smart Antennas</span>
-                    <span className="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Edge Inference</span>
-                  </div>
                 </div>
 
-                {/* Experience Item 1: AI Specialist */}
+                {/* AI Specialist */}
                 <div className="border-l-4 border-gray-300 pl-4">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
                     <Calendar className="w-4 h-4" />
                     <span>May 2025 – Aug 2025</span>
                   </div>
-
                   <h4 className="text-lg font-semibold text-gray-900">AI Specialist</h4>
-                  <h5 className="text-blue-600 font-medium mb-2">
-                    Florida Atlantic University, Office of Information Technology
-                  </h5>
-
+                  <h5 className="text-blue-600 font-medium mb-2">Florida Atlantic University, Office of IT</h5>
                   <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
-                    <li>Built and deployed customized course TA bots to support instruction across any subject.</li>
-                    <li>Acted as the internal specialist on Retrieval-Augmented Generation (RAG) for AI agent building platforms.</li>
-                    <li>
-                      Collaborated with HPC experts to build a bulk document analysis tool using 32 parallel nodes for AI workloads on Google Vertex.
-                    </li>
-                    <li>Established documentation and conducted faculty/staff training on GenAI context engineering & best practices.</li>
-                    <li>Designed and owned a public repository of system prompts validated through research and testing.</li>
-                    <li>Developed a system prompting framework to reduce hallucinations and improve response reliability.</li>
-                    <li>Interfaced with external vendor (Cloudforce) to triage feature requests and manage stakeholder expectations.</li>
+                    <li>Built custom course TA bots supporting multi-subject instruction.</li>
+                    <li>Internal specialist on RAG for AI agent platforms; advised LLM context engineering.</li>
+                    <li>Collaborated on HPC backend for bulk document analysis with 32 parallel nodes on Google Vertex.</li>
+                    <li>Developed public repository and system prompting framework for GenAI consistency and accuracy.</li>
                   </ul>
-
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">GenAI</span>
-                    <span className="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">RAG</span>
-                    <span className="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">HPC</span>
-                    <span className="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Google Vertex</span>
-                  </div>
                 </div>
+
 
                 {/* Experience Item 2: Senior Systems Engineer */}
                 <div className="border-l-4 border-gray-300 pl-4">
@@ -392,27 +340,16 @@ function App() {
                 <div className="border-l-4 border-green-600 pl-4">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
                     <Calendar className="w-4 h-4" />
-                    <span>Aug 2025 – Present</span>
+                    <span>Aug 2024 – Present</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900">PhD Student in Computer Science (GPA: 4.0)</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">Ph.D. Computer Science (GPA: 3.9)</h4>
                   <h5 className="text-green-600 font-medium mb-2">Florida Atlantic University</h5>
 
                   <p className="text-gray-600 text-sm mb-2">
                     Scholarship position: <br /> Graduate Research Assistant, Center for Connected Autonomy & Artificial Intelligence (CA-AI)
-                    <br /><br />
-                    Dissertation Topic: <br /> Decentralized learning for AI model training, aggregation, and inference at the edge
+                    <br /> <br />
+                    Dissertation Topic:  <br /> Decentralized learning for AI model training, aggregation, and inference at the edge
                   </p>
-
-                  <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
-                    <li>
-                      Conducting research and coursework on intelligent wireless communication system engineering (Smart Antennas), focusing on signal coordination
-                      across multi-agent AI networks for data, model, and decision exchange.
-                    </li>
-                    <li>
-                      Designing and evaluating decentralized learning frameworks that adapt aggregation and inference behavior based on communication constraints,
-                      data distribution variability, and heterogeneous edge devices.
-                    </li>
-                  </ul>
                 </div>
 
                 {/* MS */}
@@ -421,12 +358,12 @@ function App() {
                     <Calendar className="w-4 h-4" />
                     <span>Aug 2024 – Aug 2025</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900">MS in Artificial Intelligence (GPA: 3.9)</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">M.S. Artificial Intelligence </h4>
                   <h5 className="text-green-600 font-medium mb-2">Florida Atlantic University</h5>
                   <p className="text-gray-600 text-sm mb-2">
                     Scholarship position: <br /> National Science Foundation (NSF) sponsored Research Assistant
                     <br /><br />
-                    Coursework: <br /> Deep Learning, Neural Networks, GenAI in Software Dev, Data Mining & ML, Linear Algebra for ML, Natural Language Processing,
+                    Technical Focus: <br /> Deep Learning, Neural Networks, GenAI in Software Dev, Data Mining & ML, Linear Algebra for ML, Natural Language Processing,
                     Modern Cryptography, Social Networks & Big Data Analytics, Gas Turbine Theory
                   </p>
 
@@ -454,12 +391,12 @@ function App() {
                     <Calendar className="w-4 h-4" />
                     <span>Sep 2017 – May 2020</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900">BS in Mechanical Engineering</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">B.S. Mechanical Engineering</h4>
                   <h5 className="text-green-600 font-medium mb-2">Rutgers University, Honors Academy</h5>
                   <p className="text-gray-600 text-sm mb-2">
                     Achievements: Graduated Cum Laude, Dean’s List, Completed Bachelor&apos;s Degree in just 3 years (6 semesters)
                     <br />
-                    Coursework: Internal Combustion Engines, Power Plants, Thermodynamics, Fluid Mechanics, Heat Transfer, Alternative Energy, Mechatronics,
+                    Technical Focus: Internal Combustion Engines, Power Plants, Thermodynamics, Fluid Mechanics, Heat Transfer, Alternative Energy, Mechatronics,
                     Dynamic Systems & Controls, Python Data Structures & Algorithm Analysis
                   </p>
                   <p className="text-gray-600 text-sm font-semibold mt-3">Research and Reports:</p>
@@ -545,7 +482,7 @@ function App() {
                 </div>
               </div>
               
-
+              
               {/* Technical Skills & Focus */}
               <div className="bg-white rounded-lg shadow-sm p-6">
                   <div className="flex items-center gap-3 mb-2">
@@ -585,7 +522,7 @@ function App() {
                     <div>
                       <h4 className="text-lg font-semibold text-gray-900 mb-2">Programming & Tools:</h4>
                       <div className="flex flex-wrap gap-2">
-                        {['Python', 'C++', 'R', 'MATLAB', 'PyTorch', 'TensorFlow', 'CUDA', 'Scikit-learn', 'Hugging Face'].map(
+                        {['Python', 'C', 'C++', 'R', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'CUDA', 'OpenMP', 'Hugging Face', 'MATLAB', 'Simulink'].map(
                           (item) => (
                             <span key={item} className="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded-full">
                               {item}
