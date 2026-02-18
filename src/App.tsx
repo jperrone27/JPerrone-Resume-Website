@@ -37,7 +37,7 @@ function App() {
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl font-bold text-gray-900 mb-2">Jordan Perrone</h1>
               <h2 className="text-xl text-blue-600 font-semibold mb-2">
-                Graduate Research Assistant (AI/ML Researcher)
+                AI/ML Researcher (GRA)
               </h2>
               <p className="text-gray-600 text-lg mb-3 max-w-4xl">
               @ Florida Atlantic University's Center for Connected Autonomy & Artificial Intelligence (CA-AI)
@@ -116,7 +116,7 @@ function App() {
                     <Calendar className="w-4 h-4" />
                     <span>Aug 2025 – Present</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900">Graduate Research Assistant (AI/ML Researcher)</h4>
+                  <h4 className="text-lg font-semibold text-gray-900">AI/ML Researcher (GRA)</h4>
                   <h5 className="text-blue-600 font-medium mb-2">Florida Atlantic University</h5>
                   <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
                     <li>Developing PINN and DNN architectures in PyTorch for wireless signal DOA estimation using 16-element ULA simulation data.</li>
@@ -475,8 +475,7 @@ function App() {
                       <span className="text-sm">Autonomous Wall-Tracking Robotic System</span>
                     </a>
                     <p className="text-gray-600 text-sm ml-2">
-                      Engineered an autonomous wall-tracking system for a mobile robot by developing specialized Python packages for perception,
-                      motion control, and data logging.
+                    Developed ROS2-based perception and control stack integrating LiDAR and IR sensing for hierarchical sensor fusion and closed-loop wall tracking, enabling real-time obstacle avoidance and stable navigation
                     </p>
                   </div>
                 </div>
