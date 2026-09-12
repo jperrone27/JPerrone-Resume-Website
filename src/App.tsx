@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import profilephoto from './assets/profilephoto.jpg';
 import {
   Mail,
+  Phone,
   MapPin,
   Linkedin,
   Github,
@@ -40,7 +41,7 @@ function App() {
                 Data Engineer | Ph.D. Candidate
               </h2>
               <p className="text-gray-600 text-lg mb-3 max-w-4xl">
-                Currently @ NextEra Energy (Project Atlas) & Florida Atlantic University (CA-AI)
+                Currently @ NextEra Energy (Power Generation Division) & Florida Atlantic University (CA-AI)
               </p>
 
               {/* Contact + Location */}
@@ -53,6 +54,10 @@ function App() {
                   <div className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
                     <Mail className="w-5 h-5" />
                     <span>jperrone27@gmail.com</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+                    <Phone className="w-5 h-5" />
+                    <span>(201) 919-8248</span>
                   </div>
                 </div>
               </div>
@@ -96,7 +101,7 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900">Professional Summary</h3>
             </div>
             <p className="text-gray-600 text-lg">
-              Software engineer developing enterprise data pipelines, AI-enabled software, and engineering systems. Currently serving on NextEra Energy’s Project Atlas, a strategic modernization initiative transforming data architecture and governance to enable reliable generative AI analytics for America’s largest energy asset portfolio while pursuing a Ph.D. in Computer Science focused on distributed machine learning for Radiofrequency signal processing.
+              Systems & Software Engineer specializing in AI/ML, RF signal processing, high-performance computing, and autonomous systems. Currently engineering modernized pipelines and database architectures for Generative AI analytics at NextEra Energy while pursuing a Ph.D. in Computer Science focused on distributed ML for RF Direction of Arrival (DOA) estimation.
             </p>
           </div>
 
@@ -113,7 +118,7 @@ function App() {
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">Programming & Tools:</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['Python', 'C/C++', 'CUDA', 'OpenMP', 'MPI', 'AVX2', 'R', 'SQL', 'ReactJS', 'Agentic Development'].map(
+                  {['Python', 'C/C++', 'CUDA', 'OpenMP', 'MPI', 'AVX2', 'R', 'SQL', 'ReactJS', 'ROS2', 'Arduino'].map(
                     (item) => (
                       <span key={item} className="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded-full">
                         {item}
@@ -126,7 +131,7 @@ function App() {
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">Platforms:</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['Databricks', 'PostgreSQL', 'Nvidia HPC', 'Kubernetes', 'Arduino', 'Simulink', 'RedHawk Linux', 'Unix', 'Git', 'Docker'].map(
+                  {['Databricks', 'PostgreSQL', 'Nvidia HPC', 'Kubernetes', 'Simulink', 'RedHawk Linux', 'Unix', 'Git', 'Docker'].map(
                     (item) => (
                       <span key={item} className="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded-full">
                         {item}
@@ -139,7 +144,7 @@ function App() {
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">AI/ML:</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['PyTorch', 'TensorFlow', 'Neural Networks', 'Transformers', 'Multimodal LLMs', 'Agentic Systems', 'Classical ML'].map(
+                  {['PyTorch', 'TensorFlow', 'Neural Networks', 'Transformers', 'LLMs', 'Computer Vision (VLM, CNN)', 'Classical ML'].map(
                     (item) => (
                       <span key={item} className="px-2 py-1 bg-gray-200 text-gray-800 text-xs rounded-full">
                         {item}
@@ -172,18 +177,18 @@ function App() {
                     <span>May 2026 – Present</span>
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900">Data Engineer (Contract)</h4>
-                  <h5 className="text-blue-600 font-medium mb-2">NextEra Energy, PGD</h5>
+                  <h5 className="text-blue-600 font-medium mb-2">NextEra Energy, Power Generation Division</h5>
                   <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
-                    <li>Build complex financial forecasting and reporting models including upstream data pipelines in Databricks enabling near-real-time analytics of the world’s largest wind turbine fleet and avoiding +1000 hours of manual work.</li>
-                    <li>Champion and prototype enterprise use cases of GenAI to executive management including Databricks Genie, Google Gemini Suite, and custom LLM powered tools built with agentic development.</li>
-                    <li>Architect and implement cloud data migration strategies for Project Atlas, translating legacy, spreadsheet-driven mathematical models (repair cost projections, asset failure counts) into structured Databricks Medallion products.</li>
-                    <li>Lead a team of consultants in executing source-to-target mapping, metadata standardization, and Databricks Unity Catalog governance workflows, new pipeline development, and process modernization.</li>
-                    <li>Translate complex cross-functional business requirements (Finance, FP&A, Reliability Engineering) into scalable technical specifications for data pipeline architecture and downstream cloud analytics development.</li>
-                    <li>Modernize operational analytics pipelines by replacing fragile, human-in-the-loop business workflows with governed, reusable cloud data products supporting fleet-wide major component and expenditure forecasting.</li>
-                    <li>Drive new hierarchy development and implementation for IBM Maximo and SAP, leveraging deep systems engineering and business knowledge of energy facility design, construction, operation, and financials.</li>
-                    <li>Develop custom internal tools including VLM powered construction drawing review and data extraction software for automated asset data collection and data quality verification to avoid 200 hours of manual review per site.</li>
-                    <li>Translate field-site technical constraints, including low-connectivity edge environments, technician data-collection blockers, and photo-capture gaps, into software requirements for centralized asset intelligence platforms.</li>
-                    <li>Design predictive workflows for wind fleet spare-parts and BOM creation, analyzing Maximo job planning and SAP transaction data for equipment-level supply chain intelligence.</li>
+                    <li>Establishing an internal template repository for developing Databricks data pipelines, jobs, dashboards, and applications, enabling strict governance, version control, and accelerated development for low-code users.</li>
+                    <li>Building a prototype for complex financial forecasting and scenario planning, including upstream data pipelines in Databricks enabling analytics of the world’s largest wind turbine fleet and saving +1000 hours of manual work.</li>
+                    <li>Engineering semantic layer and developing customized AI agent in Databricks to provide executive management an unprecedented ability to rapidly gather insights and probe operational performance data in natural language.</li>
+                    <li>Pioneering and validating VLM-powered OCR logic and service designed to allow technicians to collect iPhone image data of equipment nameplates for automated asset management database population on the backend.</li>
+                    <li>Translating field-site technical constraints, including low-connectivity edge environments, technician data-collection blockers, and photo-capture gaps, into software requirements for centralized asset intelligence platforms.</li>
+                    <li>Supporting the architectural redesign of IBM Maximo and key database systems to enable reliable predictive analytics, field work optimization, revenue maximization, supply chain management, and financial projections.</li>
+                    <li>Modernizing operational analytics pipelines by replacing fragile, human-in-the-loop business workflows with governed, reusable cloud data products supporting fleet-wide major component and expenditure forecasting.</li>
+                    <li>Programming automation for renewable fleet spare-parts inventory management and BOM creation, analyzing a complex combination of IBM Maximo table and SAP transaction data relationships to infer associations.</li>
+                    <li>Developing a custom internal tool to map knowledge graphs from entire power generation facilities and individual equipment schematics, transforming the way engineers and agents traverse and understand drawings and data.</li>
+                    <li>Proposing an interactive facility and equipment 3D rendered application to be built from knowledge graphs to allow technicians to remotely train, examine, and troubleshoot, paving the way for future digital twin implementation.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-3">
                     <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Databricks</span>
@@ -196,15 +201,15 @@ function App() {
                 <div className="border-l-4 border-gray-300 pl-4">
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
                     <Calendar className="w-4 h-4" />
-                    <span>Aug 2025 – Present</span>
+                    <span>Aug 2025 – May 2026</span>
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900">AI/ML Researcher, Ph.D. Candidate</h4>
                   <h5 className="text-blue-600 font-medium mb-2">Florida Atlantic University</h5>
                   <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
-                    <li>Researched RF direction-of-arrival (DOA) estimation algorithms using 16-element antenna (ULA) signal samples.</li>
-                    <li>Developed Physics-Informed Neural Network (PINN), DNN, and hybrid models in PyTorch for DOA estimation.</li>
-                    <li>Presented research seminar comparing neural network based and classical DOA estimators (e.g. Maximum Likelihood grid search algorithms) under varying SNR conditions for single and multi-snapshot cases.</li>
-                    <li>Explored decentralized and federated learning frameworks for collaborative edge-based DOA estimation, optimizing model accuracy under communication and compute constraints.</li>
+                    <li>Proposed and tested a lightweight neural network for edge device applications developed with a novel dataset engineering methodology to produce a computationally efficient, universal estimator of the Direction of Arrival (DOA) of multiple signals in various noise conditions.</li>
+                    <li>Explored Physics-Informed Neural Networks (PINNs), DNNs, and hybrid models in PyTorch for DOA estimation.</li>
+                    <li>Presented research seminar comparing neural-network based and classical DOA estimators (e.g., Maximum Likelihood grid search algorithms) under varying SNR conditions for single and multi-snapshot cases.</li>
+                    <li>Investigated decentralized and federated learning frameworks for collaborative edge-based DOA estimation, optimizing model accuracy under communication and compute constraints.</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-3">
                     <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">PyTorch</span>
@@ -229,16 +234,15 @@ function App() {
                     <li>Led system architecture design and trade studies for hybrid solar + storage platforms across multiple geographic regions and grid interconnection standards, optimizing performance, reliability, and cost.</li>
                     <li>Engineered and maintained proprietary Python-based software for battery system simulation and optimization, including numerical modeling, performance evaluation, and cost optimization.</li>
                     <li>Independently developed a Python-based software tool that automates applications engineering and electrical system sizing for battery energy storage facilities, reducing engineering labor by 500+ hours/year.</li>
-                    <li>Replaced legacy Excel/VBA workflows with Python-based software tools, improving processing speed by 60% and enabling solar plant systems engineering team to generate 200+ optimized system designs annually.</li>
-                    <li>Routinely conducted parametric sensitivity analyses across hundreds of system configurations to improve project internal rate of return (IRR) by up to 10+ basis points compared to customer RFP targets.</li>
+                    <li>Replaced legacy Excel/VBA workflows with Python-based software tools, improving processing speed by 60% and enabling the solar plant systems engineering team to generate 200+ optimized system designs annually.</li>
+                    <li>Routinely conducted parametric sensitivity analyses across hundreds of system configurations to improve project internal rate of return (IRR) by up to 10 basis points compared to customer RFP targets.</li>
                     <li>Engineered environmental and operational modeling tools to predict shading, soiling, and degradation impacts using multi-decade NOAA datasets to forecast downtime and maintenance.</li>
-                    <li>Redesigned and optimized a Python program that automates electrical calculations by iteratively processing manufacturer configuration files, modeling degradation-driven changes in current and voltage over system lifetime.</li>
+                    <li>Redesigned and optimized a Python program that automates electrical calculations by iteratively processing manufacturer configuration files, modeling degradation-driven changes in current and voltage over the system life.</li>
                   </ul>
 
                   <p className="text-gray-600 text-sm font-semibold mt-3">Key Technical Achievements:</p>
                   <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
-                    <li>Secured a $500M multi-project portfolio by leading systems engineering analysis and presenting validated performance, reliability, and financial models for U.S. Department of Energy funded infrastructure programs.</li>
-                    <li>Served as lead systems engineering liaison between the U.S. Department of Energy, Puerto Rico Electric Power Authority, Engineer of Record, transmission operators, and international equipment manufacturers.</li>
+                    <li>Served as lead engineering liaison between the U.S. Department of Energy, Puerto Rico Electric Power Authority, Engineer of Record, transmission operators, and international equipment manufacturers for a $500M portfolio.</li>
                     <li>Developed, tested, validated, and deployed a modular Python-based energy system design platform used to optimally configure 30+ subsystems for performance, power grid stability, and lifecycle economics.</li>
                   </ul>
 
@@ -328,7 +332,8 @@ function App() {
 
                     <p className="text-gray-600 text-sm font-semibold mt-3">Selected Research:</p>
                     <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
-                      <li>HQC on GPU – developed & evaluated Nvidia CUDA versus AVX2 CPU implementation of bit-wise addition and multiplication of 17,000 bit integer critical to HQC, a computationally intense post-quantum cryptography algorithm.</li>
+                      <li>HQC on GPU – Developed & evaluated Nvidia CUDA versus AVX2 CPU implementation of bit-wise addition and multiplication of 17,000 bit integer critical to HQC, a computationally intense post-quantum cryptography algorithm.</li>
+                      <li>Drone ESC Digital Twin – Engineered a hardware-in-the-loop (HIL) digital twin for an aerial drone Electronic Speed Controller (ESC) using MATLAB Simulink, 3-phase sensing circuits, and Arduino PWM control loops.</li>
                       <li>Autonomous Wall-Tracking Robotic System – Developed ROS2-based perception & control stack integrating LiDAR and IR sensing for sensor fusion and closed-loop wall tracking, enabling real-time obstacle avoidance.</li>
                     </ul>
                   </div>
@@ -350,7 +355,7 @@ function App() {
                     <p className="text-gray-600 text-sm font-semibold mt-3">Selected Research:</p>
                     <ul className="text-gray-600 text-sm list-disc pl-5 space-y-1">
                       <li>Deep Learning for Toxic Plant Classification – Led development and benchmarking of VGG-16, ResNet, and InceptionNet Convolutional Neural Network (CNN) models for toxic plant classification from images. Achieved 85% accuracy and 80% faster runtime using TensorFlow with CUDA acceleration on NVIDIA GPU.</li>
-                      <li>EfficientNet (CNN) vs Vision Transformer (ViT) – trained & compared for boat classification from spectrogram data; mitigated class imbalance using data augmentation with Variational Autoencoder & Diffusion Models.</li>
+                      <li>EfficientNet (CNN) vs Vision Transformer (ViT) – Trained and compared for boat classification from spectrogram data; mitigated class imbalance using data augmentation with Variational Autoencoder & Diffusion Models.</li>
                       <li>Mister-FAU, GenAI Powered Discord Bot – Developed and deployed a custom Generative-AI powered Discord bot with a Python backend connected to a hosted Mistral-7B LLM running on a personal remote server.</li>
                     </ul>
                   </div>
